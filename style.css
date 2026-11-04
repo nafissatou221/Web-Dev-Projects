@@ -1,0 +1,258 @@
+body{
+    background-color: floralwhite;
+    margin: 0px;
+}
+header{
+    color: rgb(144, 97, 97);
+    text-align: center;
+    margin-left: 200px;
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+header p {
+    font-size: 23px;
+    margin-top: 0px;
+}
+.nav-bar {
+    background-color: rgb(231, 227, 220);
+    width: 200px;
+    height: 100vh;
+    border-radius: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.nav-bar a {
+    text-decoration: none;
+    display: block;
+    margin-top: 100px;
+    padding: 8px 12px;
+}
+.nav-bar a.active {
+    background-color: rgb(144, 97, 97);
+    color: floralwhite;
+    border-radius: 8px;
+}
+#dashboard-content , #task-content, #budget-content, #settings-content{
+    text-align: center;
+    padding-left: 100px;
+    margin-left: 200px;
+}
+#task , #finance, #action-form, #list{
+    background-color: rgb(231, 227, 220);
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 40vh;
+    text-align: left;
+    padding-left: 15px;
+}
+#finance p{
+    font-size: 1.5em;
+}
+#action-form{
+    min-height: fit-content;
+}
+#list{
+    min-height: 70vh;
+}
+#task h2 , #finance h2, .nav-bar h2, #list h2 {
+    color:rgb(144, 97, 97);
+    text-align: center;
+}
+#task ul{
+    color:rgb(107, 80, 80);
+}
+.nav-bar a , #task p , #finance p {
+    color: rgb(107, 80, 80);
+}
+#action-form label, #action-form #inp-bout{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+#action-form #inp-bout{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    margin-top: 0px;
+}
+#action-form label{
+    text-align: center;
+    font-size: 1.5em;
+    color:rgb(144, 97, 97);
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+#action-form input{
+    border-radius: 10px;
+    height: 30px;
+    flex: 1;
+}
+#action-form button {
+    text-align: center;
+    color: floralwhite;
+    background-color: rgb(144, 97, 97);
+    border-radius: 10px;
+    width: 20%;
+}
+#budget-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+#income-form, #expense-form, #savings-form, #list-part{
+    background-color: rgb(231, 227, 220);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 15px;
+    min-height: fit-content;
+}
+#income-form, #expense-form, #savings-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#list-part{
+    margin-right: 50px;
+}
+#income-form label, #expense-form label, #savings-form label {
+    text-align: center;
+    font-size: 1.5em;
+    color:rgb(144, 97, 97);
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+#expense-form #expense, #expense-form #amount {
+    text-align: left;
+    color: rgb(107, 80, 80);
+}
+#income-form input, #expense-form input, #savings-form input{
+    border-radius: 10px;
+    height: 30px;
+}
+#income-form button, #expense-form button , #savings-form button {
+    text-align: center;
+    color: floralwhite;
+    background-color: rgb(144, 97, 97);
+    border-radius: 10px;
+    height: 30px;
+}
+#list-part h2{
+    color:rgb(144, 97, 97);
+}
+
+#currency-part, #pref-part{
+    background-color: rgb(231, 227, 220);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 15px;
+    min-height: fit-content;
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+#currency-part h2, #pref-part h2 {
+    color:rgb(144, 97, 97);
+} 
+#currency-part label, #pref-part label {
+    color: rgb(107, 80, 80);
+}
+
+#currency-part #currency, #pref-part #pref{ 
+    border-radius: 10px;
+    height: 30px;
+}
+
+#settings-button{
+    display: flex;
+    gap: 20px;
+    width:auto;
+    height: 30px;
+}
+
+#reset-type{
+    background-color: rgb(177, 177, 177);
+    border-radius: 10px;
+}
+
+#submit-type{
+    background-color:rgb(136, 117, 117);
+    border-radius: 10px;
+}
+#progress-bar {
+    width: 95%;
+    height: 12px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    color: rgb(107, 80, 80);
+}
+#progress-fill{
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(107, 80, 80);
+}
+input[type="checkbox"] {
+    accent-color: rgb(107, 80, 80);
+}
+#list ul{
+    font-size: 1.5em;
+    color: rgb(107, 80, 80);
+}
+
+.income, .savings{
+    color: green;
+}
+.expense {
+    color: red;
+}
+.dark-mode {
+    background-color: #9a827b;
+    color: #F0E4D8;
+}
+.dark-mode #income-form, .dark-mode #expense-form, .dark-mode #savings-form,
+.dark-mode .nav-bar, .dark-mode #task, .dark-mode #finance,.dark-mode #action-form,
+.dark-mode #list, .dark-mode #list-part,.dark-mode #currency-part,.dark-mode #pref-part{
+    background-color: #493B37;
+}
+.dark-mode header, .dark-mode .nav-bar h2,.dark-mode #task h2,.dark-mode #finance h2,
+.dark-mode #list h2, .dark-mode #list-part h2{
+    color: #E6C8B8;
+}
+.dark-mode .nav-bar a,.dark-mode #task p,.dark-mode #finance p,.dark-mode #task ul,
+.dark-mode #list ul,.dark-mode #currency-part label,
+.dark-mode #pref-part label,.dark-mode #expense-form label,.dark-mode #income-form label,
+.dark-mode #savings-form label,.dark-mode #action-form label {
+    color: #F0E4D8;
+}
+.dark-mode input,.dark-mode select {
+    background-color: #6B514A;
+    color: #F0E4D8;
+    border: 1px solid #A88B7D;
+}
+.dark-mode button {
+    background-color: #765B55;
+    color: #F0E4D8;
+    border: 1px solid #A88B7D;
+}
+.dark-mode .nav-bar a.active {
+    background-color: #A8796D;
+    color: #FFF0E5;
+}

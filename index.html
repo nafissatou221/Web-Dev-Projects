@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>LifeBalance Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to LifeBalance</h1>
+            <p>Make managing your life easier</p>
+        </header>
+        <main>
+        <section class="nav-bar">
+            <h2>LifeBalance</h2>
+            <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="budget.html">Budget</a>
+            <a href="settings.html">Settings</a>
+            </nav>
+        </section>
+        <section id="dashboard-content">
+        <section id="task">
+            <h2>Today's task</h2>
+            <ul id="list1"></ul>
+            <p><strong>Progress <span id="progress">0%</span></strong></p>
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </section>
+        <section id="finance">
+            <h2>Finance</h2>
+            <p>Income: <span id="total-income">0</span></p>
+            <p>Expenses: <span id="total-expenses">0</span></p>
+            <p>Balance: <span id="total-balance">0</span></p>
+            <p>Savings: <span id="total-savings">0</span></p>
+        </section>
+        </section>
+        </main>
+    </body>
+
+</html>

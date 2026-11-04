@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LifeBalance Budget page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>My Budget</h1>
+        </header>
+        <main>
+        <section class="nav-bar">
+            <h2>LifeBalance</h2>
+            <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html" >Tasks</a>
+            <a href="budget.html" class="active">Budget</a>
+            <a href="settings.html">Settings</a>
+            </nav>
+        </section>
+        <section id="budget-content">
+        <div id="label-part">
+        <form id="income-form">
+            <label for="income">Add Income</label>
+            <input id="income" type="text" name="income" placeholder="Enter Amount">
+            <button type="submit">+Add Income</button>
+        </form>
+        <form id="expense-form">
+            <label>Add Expense</label>
+            <label for="expense">Expense Category</label>
+            <input id="expense" type="text" name="expense" placeholder="Ex. Clothing">
+            <label for="amount">Amount</label>
+            <input id="amount" type="text" name="amount" placeholder="Enter Amount">
+            <button type="submit">+Add Expense</button>
+        </form>
+        <form id="savings-form">
+            <label for="savings">Add Savings</label>
+            <input id="savings" type="text" name="income" placeholder="Enter Amount">
+            <button type="submit">+Add Savings</button>
+        </form>
+        </div>
+        <section id="list-part">
+            <h2>Recent Transactions</h2>
+            <ul id="list2"></ul>
+        </section>
+        </section>
+    </body>
+</html>

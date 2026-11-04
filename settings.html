@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LifeBalance Settings page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Personalize your Life Balance Experience</h1>
+        </header>
+        <main>
+        <section class="nav-bar">
+            <h2>LifeBalance</h2>
+            <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html" >Tasks</a>
+            <a href="budget.html">Budget</a>
+            <a href="settings.html" class="active">Settings</a>
+            </nav>
+        </section>
+        <section id="settings-content">
+            <section id="currency-part">
+                <h2>Currency</h2>
+                <label for="currency">Choose your currency.</label>
+                <select id="currency" name="currency">
+                    <option value="XOF">Franc CFA</option>
+                    <option value="EUR">Euro</option>
+                    <option value="USD">US Dollar</option>
+                </select>
+            </section>
+            <section id="pref-part">
+                <h2>App Preference</h2>
+                <label for="pref">Choose you preferred mode.</label>
+                <select id="pref" name="pref">
+                    <option value="Dark">Dark mode</option>
+                    <option value="Light">Light mode</option>
+                </select>
+            </section>
+            <div id="settings-button">
+                <button type="reset" id="reset-type">Reset to Default</button>
+                <button type="submit" id="submit-type">Save Changes</button>
+            </div>
+
+        </section>
+    </body>
+</html>

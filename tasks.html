@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>LifeBalance Tasks page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Today's ToDo list</h1>
+        </header>
+        <main>
+        <section class="nav-bar">
+            <h2>LifeBalance</h2>
+            <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html" class="active">Tasks</a>
+            <a href="budget.html">Budget</a>
+            <a href="settings.html">Settings</a>
+            </nav>
+        </section>
+        <section id="task-content">
+        <section id="action-form">
+            <form>
+                <label for="action">Add an action</label>
+                <div id="inp-bout">
+                <input id="action" type="text" name="action" placeholder="Ex: Go to sport">
+                <button type="submit">Add action</button>
+                </div>
+            </form>
+        </section>
+        <section id="list">
+            <h2>Action's list</h2>
+            <ul id="list1"></ul>
+        </section>
+        </section>
+        </main>
+    </body>
+
+</html>
