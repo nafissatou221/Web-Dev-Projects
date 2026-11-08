@@ -97,6 +97,7 @@ const tasks = getTasks(); //loads existing tasks
 const form1 = document.querySelector('#action-form')
 const input1 = document.querySelector('#action')
 const list1 = document.querySelector('#list1')
+const resetTask= document.querySelector('#reset-tasks');
 
 function displayTasks(){
     list1.innerHTML="";
@@ -152,6 +153,17 @@ function updateProgress(){
     const progressFill=document.querySelector("#progress-fill");
     progressFill.style.width=percentage+"%";
 }
+function resetTasks(){
+    tasks.splice(0,tasks.length);
+    saveTasks(tasks);
+    displayTasks();
+    updateProgress();
+}
+if(resetTask){
+    resetTask.addEventListener("click",()=>{
+        resetTasks();
+    });
+}
 
 //budget page
 function getBudget(){ 
@@ -176,6 +188,7 @@ const amountInput=document.querySelector('#amount')
 const mySavings=document.querySelector('#savings-form');
 const savingsInput=document.querySelector('#savings');
 const list2=document.querySelector('#list2');
+const resetBudg= document.querySelector('#reset-budget');
 
 if(myIncome&&incomeInput){
     myIncome.addEventListener("submit",(event)=>{
@@ -278,3 +291,17 @@ if(inc&&exp&&sav&&bal){
     displayFinance();
 }
 
+function resetBudget(){
+    budget.income=0;
+    budget.expenses=0;
+    budget.savings=0;
+    budget.transactions=[];
+    saveBudget(budget);
+    displayTransaction();
+    displayFinance();
+}
+if(resetBudg){
+    resetBudg.addEventListener("click",()=>{
+        resetBudget();
+    });
+}

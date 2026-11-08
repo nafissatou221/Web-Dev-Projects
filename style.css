@@ -256,3 +256,10 @@ input[type="checkbox"] {
     background-color: #A8796D;
     color: #FFF0E5;
 }
+#reset-tasks, #reset-budget{
+    background-color: rgb(144, 97, 97);
+    color: floralwhite;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 12px;
+}
