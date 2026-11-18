@@ -1,5 +1,5 @@
 # LifeBalance
-
+https://nafissatou221.github.io/Web-Dev-Projects/
 ## About the Project
 LifeBalance is a personal management web application designed to help users organize their daily tasks and manage their finances in one place.
 
